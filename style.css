@@ -106,6 +106,10 @@ body {
   font-size: 1.5rem;
 }
 
+.input_field::placeholder {
+  color: #585858; 
+}
+
 .content_section form button {
   position: absolute;
   height: 100%;
@@ -182,6 +186,7 @@ body {
 
 /* Tombol "Use Current Location" */
 .btn_current_location {
+  width: 100%;
   background: #31af85;
   color: #fff;
   padding: 1rem 2rem;
@@ -202,5 +207,49 @@ body {
   to {
     transition: all 0.5s ease-in;
     opacity: 1;
+  }
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    margin-top: 350px;
+    max-width: 90%; 
+    background-color: #4c76774b;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.26);
+  }
+
+  .default_info {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .content_section {
+    position: static; 
+    margin-bottom: 20px; 
+  }
+
+  .content_section form {
+    margin: 1.5rem 0;
+  }
+
+  .list_content ul {
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .list_content ul li {
+    margin-bottom: 1rem;
+  }
+
+  .btn_current_location {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
